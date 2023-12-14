@@ -6,9 +6,9 @@
 
 
 # 后台IP设置
-export Ipv4_ipaddr="192.168.5.1"            # 修改openwrt后台地址(填0为关闭)
+export Ipv4_ipaddr="10.0.0.253"            # 修改openwrt后台地址(填0为关闭)
 export Netmask_netm="255.255.255.0"         # IPv4 子网掩码（默认：255.255.255.0）(填0为不作修改)
-export Op_name="OpenWrtli"                # 修改主机名称为OpenWrt-123(填0为不作修改)
+export Op_name="Jydn"                # 修改主机名称为OpenWrt-123(填0为不作修改)
 
 # 内核和系统分区大小(不是每个机型都可用)
 export Kernel_partition_size="20"            # 内核分区大小,每个机型默认值不一样 (填写您想要的数值,默认一般16,数值以MB计算，填0为不作修改),如果你不懂就填0
@@ -44,7 +44,7 @@ export Customized_Information="$(TZ=UTC-8 date "+%Y.%m.%d")"  # 个性签名,你
 export Replace_Kernel="6.1"                    # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
 
 # 设置免密码登录(个别源码本身就没密码的)
-export Password_free_login="1"               # 设置首次登录后台密码为空（进入openwrt后自行修改密码）(1为启用命令,填0为不作修改)
+export Password_free_login="0"               # 设置首次登录后台密码为空（进入openwrt后自行修改密码）(1为启用命令,填0为不作修改)
 
 # 增加AdGuardHome插件和核心
 export AdGuardHome_Core="0"                  # 编译固件时自动增加AdGuardHome插件和AdGuardHome插件核心,需要注意的是一个核心20多MB的,小闪存机子搞不来(1为启用命令,填0为不作修改)
@@ -59,7 +59,7 @@ export Automatic_Mount_Settings="0"          # 编译时加入开启NTFS格式�
 export Disable_autosamba="0"                 # 去掉源码默认自选的luci-app-samba或luci-app-samba4(1为启用命令,填0为不作修改)
 
 # 其他
-export Ttyd_account_free_login="0"           # 设置ttyd免密登录(1为启用命令,填0为不作修改)
+export Ttyd_account_free_login="1"           # 设置ttyd免密登录(1为启用命令,填0为不作修改)
 export Delete_unnecessary_items="0"          # 个别机型内一堆其他机型固件,删除其他机型的,只保留当前主机型固件(1为启用命令,填0为不作修改)
 export Disable_53_redirection="0"            # 删除DNS强制重定向53端口防火墙规则(个别源码本身不带此功能)(1为启用命令,填0为不作修改)
 export Cancel_running="0"                    # 取消路由器每天跑分任务(个别源码本身不带此功能)(1为启用命令,填0为不作修改)
