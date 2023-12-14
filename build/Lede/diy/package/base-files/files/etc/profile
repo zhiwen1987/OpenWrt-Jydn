@@ -164,7 +164,7 @@ done
 
 function k_change_ip() {
   echo -e "\n q. 返回(return)"
-  export k_ip="请输入新IP(Please input the new IP[eg:192.168.5.1])"
+  export k_ip="请输入新IP(Please input the new IP[eg:10.0.0.253])"
   echo
   while :; do
   domainy=""
